@@ -1,14 +1,15 @@
 body{
        background-image: url("bcgd.svg");
        background-attachment: fixed;
+       position: relative;
     }
 .topnav{
+       position: fixed;
         overflow: hidden;
         background-color: #222222;
         width: 100%;
         height: 60px;
         left: 0px;
-        position: absolute;
         top: 0;
         right: 0px;
         display: block;
@@ -63,12 +64,13 @@ body{
        color: white;
    }
 .PizzaMenu{
-       position: absolute;
+       position: relative;
        width: 185px;
        height: 37px;
-       left: 90px;
-       top: 101px;
+       left: 50px;
+       top: 95px;
 
+       padding-bottom: 150px;
        font-family: 'Arial';
        font-style: normal;
        font-weight: 700;
@@ -81,7 +83,7 @@ body{
                                  
                             /* Social Media Icons*/
 .a{
-       position: absolute;
+       position: relative;
        width: 162px;
        height: 40px;
        left: 1185px;
@@ -104,16 +106,15 @@ body{
    
    /* -----------------------*/
 .parent {
-       position:fixed;
 	background-color: none;
-       height: 370px;
-       left: 75px;
-       top: 179px;
-       
+       left:30px;
+       top: 150px;
 
-	padding:10px 0px 10px 0px;
-	margin:0px 10px;
-	display:grid;
+       padding-right: 200px;
+	padding-left: 200px;
+	margin-left:50px;
+	display:flex;
+       flex-wrap: nowrap;
 	grid-auto-flow:column;
 	grid-auto-columns:25%;
 	gap: 20px;
@@ -154,30 +155,34 @@ body{
 
 }
 
-.transbox p {
-     
-	padding:10px;
-	color: black;
+.transbox{
+       position: relative;
+       width: 300px;
+       height: 115px;
+       padding: 15px 15px 15px 15px;
+       top: 216px;
+       background: white;
+       border-radius: 10px;
 }
 .transbox h1{
+       position: relative;
        width: 200px;
 	color:black;
        font-size: 24px;
 }
 .transbox h2{
-      
-       top:-2px;
-       left: 280px;
+       position: relative;
+       top:-55px;
+       left: 210px;
        width: 50px;
        height: 5px;
        padding:10px;
 	color:black;
        font-size: 24px;
 }
-.transbox{
+.transbox p {
        position: relative;
-       padding: 15px 15px 15px 15px;
-       top: 216px;
-       background: white;
-       border-radius: 10px;
+	padding:10px;
+	color: black;
+       top:-50px;
 }
