@@ -1,0 +1,184 @@
+body{
+    background-image: url("bcgd.svg");
+    background-attachment: fixed;
+    }
+.topnav{
+    overflow: hidden;
+    background-color: #222222;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    
+}
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    left: 7.08%;
+    right: 89.03%;
+    top: 34.29%;
+    bottom: 32.86%;
+    margin-right: 2%;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+
+    transition: 0.4s;
+    z-index: 99;
+}
+.topnav a:hover{
+    background-color: #FFA800;
+    color:white;
+}
+.signin{
+        position: absolute;
+        box-sizing: border-box;
+        background-color: #222222;
+        left: 86.25%;
+        right: 6.25%;
+        top: 2%;
+        height: 6%;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        
+        border: 1px solid #FFA800;
+        border-radius: 5px;
+    
+        /* signup text*/
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 35px;
+        text-align: center;
+    
+        color: #FFA800;
+    }
+.signin:hover{
+    background-color: #FFA800;
+    color: white;
+}
+.PizzaCrust{
+    position: absolute;
+    width: 232px;
+    height: 10px;
+    left: 90px;
+    top: 101px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+.introduce{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 90px;
+    top: 160px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+.perpendicular-line {
+    position: absolute;
+    width: 685px;
+    height: 0px;
+    left: 0px;
+    top: 50px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    transform: rotate(180deg);
+    border: 1px solid #FFFFFF;
+  }
+.Member-position{
+    position: absolute;
+    width: 180px;
+    height: 26px;
+    left: 0px;
+    top: 150px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+.membersName{
+    position: absolute;
+    width: 300px;
+    height: 26px;
+    left: 300px;
+    top: 150px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+.member1:hover{
+        color: #FFA800;
+}
+.member2:hover{
+    color: #FFA800;
+}
+.member3:hover{
+    color: #FFA800;
+}
+.member4:hover{
+    color: #FFA800;
+}
+.member5:hover{
+    color: #FFA800;
+}
+
+.icons{
+    position: absolute;
+    width: 162px;
+    height: 70px;
+    left: 280px;
+    top: 690px;
+    word-spacing: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 4px rgba(169, 123, 35, 0.29));
+}
+.follow{
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    left: 90px;
+    top: 700px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}

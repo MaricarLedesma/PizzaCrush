@@ -1,0 +1,163 @@
+body{
+    background-image: url("bcgd.svg");
+    background-attachment: fixed;
+}   
+.topnav{
+    overflow: hidden;
+    background-color: #222222;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: block;
+    transition: top 0.3s;
+
+}
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    left: 7.08%;
+    right: 89.03%;
+    top: 34.29%;
+    bottom: 32.86%;
+    margin-right: 2%;
+    display: block;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+}
+.topnav a:hover{
+    background-color: #FFA800;
+    color:white;
+}
+.signin{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #222222;
+    left: 86.25%;
+    right: 6.25%;
+    top: 2%;
+    height: 6%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+    border: 1px solid #FFA800;
+    border-radius: 5px;
+
+    /* signup text*/
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFA800;
+}
+.signin:hover{
+    background-color: #FFA800;
+    color: white;
+}
+.Title{
+        position: absolute;
+        width: 700px;
+        height: 46px;
+        left: 50px;
+        top: 95px;
+    
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 46px;
+        /* identical to box height */
+        color: #FFA800;
+}
+.column{
+    position: fixed;
+}
+.column1{
+        box-sizing: border-box;
+        position: absolute;
+        top:160px;
+        left: 50px;
+        width: 625px;
+        height: 400px;
+        padding: 20px;
+        background: rgba(38, 38, 38, 0.9);
+        border-radius: 10px;
+        border: 1px solid #FFA800;
+        font-family: 'Arial'
+}
+            .column1 h1{
+                    position: relative;
+                    font-size: 18px;
+                    color: #FFA800;
+                    top:0px;
+                    left: 10px;
+                    font-weight: bolder;
+            }
+            .column h2{
+                    position: relative;
+                    font-size: 16px;
+                    color: #ffff;
+                    top:-28px;
+                    left: 350px;
+            }
+            .column1 p{
+                    position: relative;
+                    font-size: 18px;
+                    color: #ffff;
+                    top:-20px;
+                    left: 30px;
+                    line-height: 15px;
+            }
+            .perpendicular-line{
+                    width: 580px;
+            }
+            .column1 h3{
+                    position: relative;
+                    font-size: 20px;
+                    color: #FFA800;
+                    top:80px;
+                    left: 15px;
+                    font-weight: bolder;
+            }
+            .Select{
+                    position: relative;
+                    width: 120px;
+                    height: 40px;
+                    left: 450px;
+                    top: 30px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    background: #FFA800;
+                    border-radius: 10px;
+                    font: arial;
+                    font-size: 20px;
+            }
+            .Select:hover{
+                    background-color: #FFA800;
+                    color: white;
+            }
+.column2{
+        box-sizing: border-box;
+        position: absolute;
+        top:0px;
+        left: 640px;
+        width: 625px;
+        height: 400px;
+        padding: 20px;
+        background: rgba(38, 38, 38, 0.9);
+        border-radius: 10px;
+        border: 1px solid #FFA800;
+}
+
+

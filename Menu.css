@@ -1,0 +1,183 @@
+body{
+       background-image: url("bcgd.svg");
+       background-attachment: fixed;
+    }
+.topnav{
+        overflow: hidden;
+        background-color: #222222;
+        width: 100%;
+        height: 60px;
+        left: 0px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        display: block;
+        transition: top 0.3s;
+}
+.topnav a{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        left: 7.08%;
+        right: 89.03%;
+        top: 34.29%;
+        bottom: 32.86%;
+        margin-right: 2%;
+        display: block;
+
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px;
+}
+.topnav a:hover{
+       background-color: #FFA800;
+       color:white;
+}
+.signin{
+       box-sizing: border-box;
+       background-color: #222222;
+       position: absolute;
+       left: 86.25%;
+       right: 6.25%;
+       top: 20%;
+       bottom: 18.57%;
+
+       border: 1px solid #FFA800;
+       border-radius: 5px;
+
+       /* signup text*/
+       font-family: 'Arial';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 15px;
+       line-height: 18px;
+
+       color: #FFA800;
+}
+.signin:hover{
+       background-color: #FFA800;
+       color: white;
+   }
+.PizzaMenu{
+       position: absolute;
+       width: 185px;
+       height: 37px;
+       left: 90px;
+       top: 101px;
+
+       font-family: 'Arial';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 32px;
+       line-height: 37px;
+}
+
+                            /*ORDER*/
+                                             
+                                 
+                            /* Social Media Icons*/
+.a{
+       position: absolute;
+       width: 162px;
+       height: 40px;
+       left: 1185px;
+       top: 98px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+   }
+.icons{
+       position: absolute;
+       width: 162px;
+       height: 40px;
+       left: 1120px;
+       top: 98px;
+       word-spacing: 15px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       filter: drop-shadow(0px 10px 4px rgba(169, 123, 35, 0.29));
+}
+
+   
+   /* -----------------------*/
+.parent {
+       position:fixed;
+	background-color: none;
+       height: 370px;
+       left: 75px;
+       top: 179px;
+       
+
+	padding:10px 0px 10px 0px;
+	margin:0px 10px;
+	display:grid;
+	grid-auto-flow:column;
+	grid-auto-columns:25%;
+	gap: 20px;
+	overflow-x:auto;
+	
+	overscroll-behavior-inline:contain;
+	color:#ffffff;
+}
+.parent::-webkit-scrollbar {
+	height:0%; /* yung line na to para mawala yung horizontal scrollbar*/
+}
+
+.parent::-webkit-scrollbar-track {
+	background-color:#333333;
+	border-radius:20px;
+}
+
+.parent::-webkit-scrollbar-thumb {
+	background-color:#ff9933;
+	border-radius:20px;
+	
+}
+
+.box1 {
+	background-color: none;
+       border: 1px solid #FFA800;
+       border-radius: 5px;
+	height:360px;
+	border-radius:10px;
+}
+
+.snap-inline {
+	scroll-snap-type:inline mandatory;
+}
+
+.snap-inline > * {
+	scroll-snap-align:start;
+
+}
+
+.transbox p {
+     
+	padding:10px;
+	color: black;
+}
+.transbox h1{
+       width: 200px;
+	color:black;
+       font-size: 24px;
+}
+.transbox h2{
+      
+       top:-2px;
+       left: 280px;
+       width: 50px;
+       height: 5px;
+       padding:10px;
+	color:black;
+       font-size: 24px;
+}
+.transbox{
+       position: relative;
+       padding: 15px 15px 15px 15px;
+       top: 216px;
+       background: white;
+       border-radius: 10px;
+}
