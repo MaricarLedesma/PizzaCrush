@@ -6,14 +6,34 @@
         <link rel="stylesheet" href="SignInStyle.css">
     </head>
     <body>
-        <div class="topnav">
-            <a class="Home" href="./1.html">Home</a>
-            <a class="Menu" href="./MENU.html">Menu</a>
-            <a class="Order" href="Order.html">Order</a>
-            <a class="About us" href="Aboutus.html">About us</a>
+        <header class="head">
 
-            <button class="signin" onclick="location.href='file:///C:/Users/maricar/WebsiteProject/Signin.html';">Sign-In</button>
-        </div> 
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+    
+            <script>
+                hambuger_menu = document.querySelector(".hamburger-menu");
+                hambuger_menu.onclick = function() {
+                    navBar =document.querySelector(".navbar");
+                    navBar.classList.toggle("active");
+                }
+            </script>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./MENU.html">Menu</a></li>
+                    <li><a href="./Order.html">Order</a></li>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+    
+            <a class="signin" href="#">Sign-in</a>
+          
+        </header>
 
         <div class="Title">
             <span style="color:#FFA800">Sign-In</span>
@@ -31,7 +51,7 @@
 
             <a class="FP">Forgot Password?</a>
             
-            <button class="signinbtn" type="submit">Signin</button>
+            <button class="signinbtn" type="submit">Sign-in</button>
 
             <a class="DHA" onclick="location.href='file:///C:/Users/maricar/WebsiteProject/Sign-Up.html';">Don't have an Account?</a>
         </div>

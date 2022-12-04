@@ -1,245 +1,301 @@
-            body{
-                background-image: url("bcgd.svg");
-                background-attachment: fixed;
-                }
-            .topnav{
-                overflow: hidden;
-                background-color: #222222;
-                width: 100%;
-                height: 60px;
-                left: 0px;
-                position: absolute;
-                top: 0;
-                right: 0px;
-            }
-            .topnav a{
-                float: left;
-                color: white;
-                text-align: center;
-                padding: 20px 20px;
-                text-decoration: none;
-                font-size: 20px;
-                left: 7.08%;
-                right: 89.03%;
-                top: 34.29%;
-                bottom: 32.86%;
-                margin-right: 2%;
+:root {
+    /* Common break-point for screen sizes */
+    --desktop: 1200px; 
+    --laptop: 1024px;
+    --tablet: 780px;
+    --phone: 480px;
+}
 
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                line-height: 23px;
-            }
-            .topnav a:hover{
-                background-color: #FFA800;
-                color:white;
-            }
-            .signin{
-                    position: absolute;
-                    box-sizing: border-box;
-                    background-color: #222222;
-                    left: 86.25%;
-                    right: 6.25%;
-                    top: 2%;
-                    height: 6%;
-                    transition-duration: 0.4s;
-                    cursor: pointer;
-                    
-                    border: 1px solid #FFA800;
-                    border-radius: 5px;
-                
-                    /* signup text*/
-                    font-family: 'Arial';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 15px;
-                    line-height: 35px;
-                    text-align: center;
-                
-                    color: #FFA800;
-                }
-            .signin:hover{
-                background-color: #FFA800;
-                color: white;
-            }
-            .Title{
-                position: absolute;
-                width: 700px;
-                height: 46px;
-                left: 75px;
-                top: 101px;
+*{
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 46px;
-                /* identical to box height */
-                color: #FFA800;
-            }
+body {
+    min-height: 100vh; /* 100vh means na kukunin nya lang yung view height ng screen */
+    background-image: url("bcgd.svg");
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+}  
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #222222;
+    padding: 0px 2%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background-color: #FFA800;
+}
+.signin {
+    color: #FFA800;
+    font-size: 15px;
+    margin-right: 5%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.signin:hover{
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media (max-width:480px){
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger-menu .line{
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        margin: 3px 0;
+    }
+    header {
+        padding: 20px;
+    }
+    
+    header .navbar{
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #222222;
+        display: none;
+        transition: 0.9s;
+    }
+
+
+    header .navbar.active{
+        display: initial;
+        height: 250px;
+    }
+
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        width: 100%;
+    }
+
+    header .navbar ul li a:hover {
+        background-color: #FFA800;
+    }
+} 
+
+.Title{
+    position: absolute;
+    width: 700px;
+    height: 46px;
+    left: 75px;
+    top: 101px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    /* identical to box height */
+    color: #FFA800;
+}
 /*CreatAccFormStyle */
-            .creatAccForm{
-                position: absolute;
-                width: 374px;
-                height: 800px;
-                left:5px;
-                top: 30px;
-            }
-            .label {
-                position: absolute;
-                width: 300px;
-                height: 21px;
+.creatAccForm{
+    position: absolute;
+    width: 374px;
+    height: 800px;
+    left:5px;
+    top: 30px;
+}
+.label {
+    position: absolute;
+    width: 300px;
+    height: 21px;
 
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 21px;
-                /* identical to box height */
-                color: #BBBBBB;
-            }
-            .Firstname{
-                
-                left: 40px;
-                top: 5px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #BBBBBB;
+}
+.Firstname{
+    
+    left: 40px;
+    top: 5px;
 
-            }
-            .ContactNo{
-                
-                left: 40px;
-                top: 105px;
+}
+.ContactNo{
+    
+    left: 40px;
+    top: 105px;
 
-            }
-            .Email{
-                
-                left: 40px;
-                top: 205px;
+}
+.Email{
+    
+    left: 40px;
+    top: 205px;
 
-            }
-            .Add{
-                
-                left: 40px;
-                top: 305px;
-            }
-            .Password{
-                
-                left: 40px;
-                top: 405px;
+}
+.Add{
+    
+    left: 40px;
+    top: 305px;
+}
+.Password{
+    
+    left: 40px;
+    top: 405px;
 
-            }
-            .ConfirmPass{
-            
-                left: 40px;
-                top: 505px;
+}
+.ConfirmPass{
 
-            }
-            .AHA{
-                position: absolute;
-                width: 175px;
-                height: 0px;
-                top: 680px;
-                left: 40px;
+    left: 40px;
+    top: 505px;
 
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 17px;
+}
+.AHA{
+    position: absolute;
+    width: 175px;
+    height: 0px;
+    top: 680px;
+    left: 40px;
 
-                color: #FFFFFF;
-            }
-            .AHA:hover{
-                text-decoration:underline;
-            }
-            
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+.AHA:hover{
+    text-decoration:underline;
+}
+
 
 /*Textboxstyle */
-            .inputfield {
-                position: absolute;
-                width: 374px;
-                height: 50px;
+.inputfield {
+    position: absolute;
+    width: 374px;
+    height: 50px;
 
-                background: #333333;
-                border-radius: 10px;
-                border: none;
-                padding: 0 10px;
+    background: #333333;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
 
-                /* sample123@gmail.com */
+    /* sample123@gmail.com */
 
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 15px;
-                line-height: 17px;
-                color: #FDFDFD;
-            }
-            .Usernametxtbox{
-                
-                left: 40px;
-                top: 35px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    color: #FDFDFD;
+}
+.Usernametxtbox{
+    
+    left: 40px;
+    top: 35px;
 
-            }
+}
 
-            .contactNotxtbox{
-                
-                left: 40px;
-                top: 135px;
+.contactNotxtbox{
+    
+    left: 40px;
+    top: 135px;
 
-            }
-            .Emailtxtbox{
-                
-                left: 40px;
-                top: 235px;
+}
+.Emailtxtbox{
+    
+    left: 40px;
+    top: 235px;
 
-            }
-            .Address{
-                
-                left: 40px;
-                top: 335px;
+}
+.Address{
+    
+    left: 40px;
+    top: 335px;
 
-            }
-            
-            .passtxtbox{
-                
-                left: 40px;
-                top: 435px;
+}
 
-            }
-            .confirmpasstxtbox{
-                
-                left: 40px;
-                top: 535px;
-            }
-            .signupbtn{
-                position:absolute;
-                width: 395px;
-                height: 50px;
-                top: 620px;
-                left: 40px;
-                background: #FFA800;
-                border-radius: 10px;
-            
-                /* Sign-In */
-                font-family: 'Arial';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 17px;
-                transition-duration: 0.4s;
-                cursor: pointer;
-            
-                color: #000000;
-            }
-            .signupbtn:hover{
-                background-color: #FFA800;
-                color: white;
-            }
-            .container{
-                box-sizing: border-box;
-                position: absolute;
-                width: 1200px;
-                height: 430px;
-                left: 40px;
-                top: 140px;
-        
-            }
+.passtxtbox{
+    
+    left: 40px;
+    top: 435px;
+
+}
+.confirmpasstxtbox{
+    
+    left: 40px;
+    top: 535px;
+}
+.signupbtn{
+    position:absolute;
+    width: 395px;
+    height: 50px;
+    top: 620px;
+    left: 40px;
+    background: #FFA800;
+    border-radius: 10px;
+
+    /* Sign-In */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    color: #000000;
+}
+.signupbtn:hover{
+    background-color: #FFA800;
+    color: white;
+}
+.container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1200px;
+    height: 430px;
+    left: 40px;
+    top: 140px;
+
+}

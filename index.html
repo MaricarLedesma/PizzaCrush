@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header class="head">
+
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <script>
+            hambuger_menu = document.querySelector(".hamburger-menu");
+            hambuger_menu.onclick = function() {
+                navBar =document.querySelector(".navbar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./MENU.html">Menu</a></li>
+                <li><a href="./Order.html">Order</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <a class="signin" href="./Signin.html">Sign-in</a>
+      
+    </header>
+
+    <div class="Title">
+        <span style="color:#FFA800">PIZZA</span>
+        <span style="color:#FFFFFF">Crust</span>
+    </div>
+
+    <div class="homeprg">
+        <p>Order takeout from our site to save money and support business. Get the best price, and fastest service.</p>
+    </div>
+
+    <button class="ordernow" onclick="location.href='file://C:/Users/maricar/WebsiteProject/Order.html';">ORDER NOW</button>
+    
+    <div class="icons">
+        <img class="fb" src="FB.svg" onclick="window.open('https://www.facebook.com/'); ">
+        <img class="IG" src="IG.svg" onclick="window.open('https://www.facebook.com/'); ">
+        <img class="TW" src="TWITTER.svg" onclick="window.open('https://www.facebook.com/'); ">
+    </div>
+
+</body>
+</html>

@@ -6,25 +6,43 @@
         <link rel="stylesheet" href="aboutusStyle.css">
     </head>
     <body>
-        <div class="topnav">
-            <a class="Home" href="./Home.html">Home</a>
-            <a class="Menu" href="./MENU.html">Menu</a>
-            <a class="Order" href="Order.html">Order</a>
-            <a class="About us" href="AboutUs.html">About us</a>
-        </div>  
-        <div class="Signinbtn">
-            <a class="signin" onclick="location.href='file:///C:/Users/maricar/WebsiteProject/Signin.html';">Sign-In</a>
-        </div>
-    </form>
-        </div>   
+        <header class="head">
+
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+    
+            <script>
+                hambuger_menu = document.querySelector(".hamburger-menu");
+                hambuger_menu.onclick = function() {
+                    navBar =document.querySelector(".navbar");
+                    navBar.classList.toggle("active");
+                }
+            </script>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./MENU.html">Menu</a></li>
+                    <li><a href="./Order.html">Order</a></li>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+    
+            <a class="signin" href="./Signin.html">Sign-in</a>
+          
+        </header>
 
     <div class="PizzaCrust">
         <span style="color:#FFA800">PIZZA</span>
         <span style="color:#FFFFFF">Crust</span>
     </div>
+    
     <div class="introduce">
-        <p>We are the student of College of Information Communication Technology at Tagui City University.
-            We are the cretor of this webiste for our business project.
+        <p>We are the student of College of Information Communication Technology at Taguig City University.
+            We are the cretor of this website for our business project.
         </p>
 
         <hr class="perpendicular-line">
@@ -32,7 +50,7 @@
         <div class="Member-position">
             <label class="positions">Founder & CEO</label><br>
             <label class="positions">Designer</label><br>
-            <label class="positions">Researcher</label><br>
+            <label class="positions">Developer</label><br>
             <label class="positions">Business Manager</label><br>
             <label class="positions">Finance Consultant</label><br>
         </div>
