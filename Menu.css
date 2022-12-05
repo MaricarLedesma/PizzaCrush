@@ -242,9 +242,9 @@ background-image: url(order1.svg);
 }
 .transbox h2{
        position: relative;
-       top:-70px;
+       top:-50px;
        left: 200px;
-       width: 60px;
+       width: 80px;
        height: 5px;
        padding:10px;
 	color:#ffffff;
@@ -254,7 +254,7 @@ background-image: url(order1.svg);
        position: relative;
 	padding:10px;
 	color: #ffffff;
-       top:-50px;
+       top:-15px;
 }
 .btnorder{
        position: absolute;

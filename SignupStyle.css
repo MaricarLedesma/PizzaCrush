@@ -14,7 +14,7 @@
 }
 
 body {
-    min-height: 100vh; /* 100vh means na kukunin nya lang yung view height ng screen */
+    min-height: 170vh; /* 100vh means na kukunin nya lang yung view height ng screen */
     background-image: url("bcgd.svg");
     background-repeat: no-repeat;   
     background-size: cover;
@@ -201,6 +201,8 @@ header .navbar ul li a:hover {
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 
     color: #FFFFFF;
 }

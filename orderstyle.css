@@ -240,7 +240,6 @@ header .navbar ul li a:hover {
     top: 40px;
     font-family: 'Arial';
     font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 28px;
     padding: 20px;
@@ -315,7 +314,7 @@ header .navbar ul li a:hover {
 }
 .reciept h4{
     position: absolute;
-    top: 315px;
+    top: 335px;
     width: 200px;
     left: 50px;
 
@@ -400,7 +399,7 @@ header .navbar ul li a:hover {
     width: 90px;
     height: 40px;
     left: 140px;
-    top: 70px;
+    top: 80px;
     font-size: 16px;
     font-weight: bold;
     transition-duration: 0.4s;
@@ -413,5 +412,5 @@ header .navbar ul li a:hover {
 .Cancel:hover{
     background-color: #FFA800;
     color: white;
-    border-color: black;
+    border-color: white;
 }
