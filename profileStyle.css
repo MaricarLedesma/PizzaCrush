@@ -1,0 +1,239 @@
+:root {
+    /* Common break-point for screen sizes */
+    --desktop: 1200px; 
+    --laptop: 1024px;
+    --tablet: 780px;
+    --phone: 480px;
+}
+
+*{
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh; /* 100vh means na kukunin nya lang yung view height ng screen */
+    background-image: url("bcgd.svg");
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+}  
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #222222;
+    padding: 0px 2%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background-color: #FFA800;
+}
+.signin {
+    color: #FFA800;
+    font-size: 15px;
+    margin-right: 5%;
+    font-size: 15px;
+    font-weight: 700;
+}
+.signin:hover{
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+@media (max-width:480px){
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger-menu .line{
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        margin: 3px 0;
+    }
+    header {
+        padding: 20px;
+    }
+    
+    header .navbar{
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #222222;
+        display: none;
+        transition: 0.9s;
+    }
+
+
+    header .navbar.active{
+        display: initial;
+        height: 250px;
+    }
+
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        width: 100%;
+    }
+
+    header .navbar ul li a:hover {
+        background-color: #FFA800;
+    }
+}   
+.MyAccount{
+    position: relative;
+    width: 280px;
+    height: 37px;
+    left: 50px;
+    top: 95px;
+
+    padding-bottom: 120px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 37px;
+}
+.container{
+    position: absolute;
+    left: 50px;
+    top:220px;
+    width: 623px;
+    height: 355px;
+    background: rgba(149, 149, 149, 0.20);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 10px 10px 4px rgba(255, 168, 0, 0.38);
+}
+.container a{
+    position: absolute;
+    left: 30px;
+    top:-50px;
+    width: 200px;
+    height: 200px;
+    background: #222222;
+    border-radius: 100px;
+    border: #FFA800 2px solid;
+}
+.perpendicular-line{
+    position: relative;
+    top:80px;
+    left: 250px;
+    width: 300px;
+    color: #ffffff;
+}
+.container h1{
+    position: relative;
+    top:50px;
+    left: 250px;
+    width: 200px;
+    height: 5px;
+    padding:10px;
+    color:#ffffff;
+    font-size: 23px;
+}
+.container h2{
+    position: relative;
+    top:80px;
+    left: 250px;
+    width: 200px;
+    height: 5px;
+    padding:10px;
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 20px;
+}
+.addressBox, .emailBox{
+    position: absolute;
+    width: 270px;
+    height: 54px;
+    background: rgba(149, 149, 149, 0.41);
+    border-radius: 20px;
+    }
+.addressBox{
+    top:400px;
+    left:80px;
+}
+.emailBox{
+    top:400px;
+    left:380px;
+}
+.addressBox h2, .emailBox h2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align:center;
+    margin:10px;
+    margin-top: 15px;
+}
+.logoutBtn{
+    position: absolute;
+    top:500px;
+    left:220px;
+    width: 270px;
+    height: 54px;
+    background: #FFA800;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.logoutBtn:hover{
+    background-color: #222222;
+    color: #ffffff;
+}
+.editIcon{
+    position: relative;
+    top:-20px;
+    left: 520px;
+    width: 40px;
+    height: 40px;
+    background: rgba(34, 34, 34, 0.85);
+    border-radius: 100px;
+    padding: 10px;
+    
+}
+
+
+    
